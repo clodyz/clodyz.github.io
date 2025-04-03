@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FusionDash</title>
+    <title>FusionDash | Приватный сервер Geometry Dash</title>
+    <meta name="google-site-verification" content="yrSocBjKs5j0l7xva50rlJwNdPPALr9fTQBmotW1xP8" />
+    <meta name="yandex-verification" content="fcb1c59f7e6b410f" />
+    <meta name="description" content="FusionDash - крутой сервер с кастомной музыкой, розыгрышами и возможностью легко получить рейтинг." />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
         
@@ -80,7 +83,7 @@
         
         .welcome {
             font-size: 48px;
-            margin-bottom: 5px;
+            margin-bottom: 5px; /* Уменьшено расстояние */
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -143,9 +146,9 @@
             inset: -2px;
             padding: 2px;
             background: linear-gradient(90deg, 
-                rgba(255,255,255,0.1), 
-                rgba(255,255,255,0.5), 
-                rgba(255,255,255,0.1)
+                rgba(74,144,226,0.3), 
+                rgba(74,144,226,0.7), 
+                rgba(74,144,226,0.3)
             );
             border-radius: 9999px;
             -webkit-mask: 
@@ -161,8 +164,10 @@
         
         .button:hover {
             transform: translateY(-3px) scale(1.02);
-            background: rgba(255, 255, 255, 0.18);
-            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(74, 144, 226, 0.2);
+            border-color: rgba(74, 144, 226, 0.5);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .button:active {
@@ -394,7 +399,7 @@
         <div class="title">FusionDash</div>
         <div class="buttons">
             <a href="download.html" class="button">Скачать</a>
-            <a href="#" class="button">Discord</a>
+            <a href="https://discord.gg/pjZ7judXAk" class="button">Discord</a>
         </div>
         <div class="description">Крутой сервер с кастомной музыкой, розыгрышами, а также можно легко получить рейт 😎</div>
         <div class="background-element ellipse1"></div>
