@@ -131,11 +131,37 @@
             line-height: 1.6;
         }
 
-        .footer-note {
-            color: #3D3D3D;
-            font-size: 20px;
-            padding: 20px 50px;
+        .warning-message {
+            background: rgba(59, 59, 59, 0.2);
+            border-radius: 40px;
+            padding: 40px;
             text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .warning-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        .warning-message h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #ff5e62);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .warning-message p {
+            color: #848484;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
 
         @media (max-width: 768px) {
@@ -162,71 +188,13 @@
         <h1 class="demon-list-title">Демон-лист</h1>
 
         <div class="demons-container">
-
-            <div class="demon-card">
-                <div class="demon-header">
-                    <div class="position-badge position-1">#1</div>
-                    <div class="demon-info">
-                        <div class="demon-name">OT BUHTA</div>
-                        <div class="demon-difficulty">Hard Demon</div>
-                    </div>
-                    <div class="creator-card">
-                        <div>Lastyk</div>
-                        <div>ID: 129</div>
-                    </div>
-                </div>
-                <div class="demon-details">
-                    <p><strong>Информация о уровне:</strong></p>
-                    <p>Длина: Medium (45s)</p>
-                    <p>Версия: 1</p>
-                    <p>Описание: ВСЕ ЗАВИСИТ ОТ ВИНТА!</p>
-                </div>
-            </div>
-
-            <div class="demon-card">
-                <div class="demon-header">
-                    <div class="position-badge position-2">#2</div>
-                    <div class="demon-info">
-                        <div class="demon-name">Funko</div>
-                        <div class="demon-difficulty">Hard Demon</div>
-                    </div>
-                    <div class="creator-card">
-                        <div>Killsiris</div>
-                        <div>ID: 294</div>
-                    </div>
-                </div>
-                <div class="demon-details">
-                    <p><strong>Информация о уровне:</strong></p>
-                    <p>Длина: Medium (39s)</p>
-                    <p>Версия: 1</p>
-                    <p>Описание: отсутствует</p>
-                </div>
-            </div>
-
-            <div class="demon-card">
-                <div class="demon-header">
-                    <div class="position-badge position-3">#3</div>
-                    <div class="demon-info">
-                        <div class="demon-name">Sakupen God</div>
-                        <div class="demon-difficulty">Medium Demon</div>
-                    </div>
-                    <div class="creator-card">
-                        <div>Lastyk</div>
-                        <div>ID: 83</div>
-                    </div>
-                </div>
-                <div class="demon-details">
-                    <p><strong>Информация о уровне:</strong></p>
-                    <p>Длина: Medium (39s)</p>
-                    <p>Версия: 1</p>
-                    <p>Описание: отсутствует</p>
-                </div>
+            <div class="warning-message">
+                <div class="warning-icon">⚠️</div>
+                <h2>Демон-лист недоступен</h2>
+                <p>В настоящее время демон-лист недоступен и будет готов после создания нового сервера.</p>
+                <p>Приносим извинения за временные неудобства.</p>
             </div>
         </div>
-
-        <footer class="footer-note">
-            *Демон-лист FusionDash by clody & LimGD (12.09.24)
-        </footer>
     </div>
 
     <script>
